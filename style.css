@@ -8,30 +8,30 @@
 body {
   align-items: center;
   background-color: hsl(0, 0%, 8%);
+  color: white;
   display: flex;
   font-family: "Inter", sans-serif;
   height: 100vh;
   justify-content: center;
   width: 100vw;
-  color: white;
 }
 
 .container {
+  align-items: center;
   background-color: hsl(0, 0%, 12%);
   border-radius: .7rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  max-width: 90vw;
   padding: 2rem;
   width: 410px;
-  max-width: 90vw;
 }
 
 .user-img {
   border-radius: 100%;
-  width: 6rem;
   margin: 1rem 0;
+  width: 6rem;
 }
 
 .user-name {
@@ -63,15 +63,15 @@ body {
 .user-link {
   button {
     background-color: hsl(0, 0%, 20%);
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    width: 100%;
-    padding: 1rem;
     border-radius: .5rem;
+    border: none;
     color: white;
+    cursor: pointer;
     font-family: inherit;
+    font-weight: 600;
+    padding: 1rem;
     transition: all 250ms;
+    width: 100%;
   }
 
   button:hover {
