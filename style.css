@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  align-items: center;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  color: white;
+}
+
+.container {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: .7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 410px;
+  max-width: 90vw;
+}
+
+.user-img {
+  border-radius: 100%;
+  width: 6rem;
+  margin: 1rem 0;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.user-city {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+
+.user-description {
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+.user-description::after,
+.user-description::before {
+  content: '"';
+}
+
+.user-links {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  width: 100%;
+}
+
+.user-link {
+  button {
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: white;
+    font-family: inherit;
+    transition: all 250ms;
+  }
+
+  button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .user-description {
+    font-size: 1rem;
+  }
+}
